@@ -1,14 +1,14 @@
 import React from 'react';
 import  Layout from "../layout.jsx";
 
-const About = () => {
+const Contact = () => {
   // Contenido de tu página About
   return (
     <main>
-      <h1>About Page</h1>
+      <h1>Contact Page</h1>
       {/* Otros componentes o contenido */}
     </main>
   );
 };
 
-export default About;
+export default Contact;
