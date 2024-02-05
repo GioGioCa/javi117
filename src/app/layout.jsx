@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import { Suspense } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import "./globals.css";
+import "./styles/globals.css";
 
 //Components
 import Navbar from "./components/Navbar";
@@ -22,17 +22,19 @@ export const metadata = {
   themeColor: "#000000",
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/../../public/favicon.ico" />
+        <link
+          rel="icon"
+          href="/../../public/favicon.ico"
+        />
       </Head>
       <body className={inter.className}>
-      <Suspense fallback= {<Loading />}>
-        <Navbar />
-      </Suspense>
+        <Suspense fallback={<Loading />}>
+          <Navbar />
+        </Suspense>
         {children}
       </body>
     </html>
