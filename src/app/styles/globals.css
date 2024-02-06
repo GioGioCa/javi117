@@ -13,16 +13,16 @@ main {
 }
 
 /* nav styles */
-nav{
+nav {
   @apply pb-4
     border-b-2 border-gray-200
     flex items-center justify-end gap-5
     my-10 mx-auto
     max-w-5xl;
-    text-transform: uppercase;
-    /* background-color: green; */
+  text-transform: uppercase;
+  /* background-color: green; */
 }
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
@@ -54,11 +54,14 @@ main nav {
   @apply border-0;
 }
 
-
 /* header */
 
 .header {
-  background-color: linear-gradient(to right, rgb(0 0 0 /0.8), rgb(0 0 0 / 0.7));
+  background-color: linear-gradient(
+    to right,
+    rgb(0 0 0 /0.8),
+    rgb(0 0 0 / 0.7)
+  );
   /* //url(../../../public/banner.jpg); */
   background-size: cover;
   background-position: 50%;

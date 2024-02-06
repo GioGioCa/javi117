@@ -1,0 +1,42 @@
+
+/* Estilo específico para el main de la página about */
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 30px; /* Ajusta el borde redondeado */
+    max-width: 5xl; /* Ajusta el ancho máximo max-width: 64rem;*/
+    background-color: #f7f7f7; /* Cambia el color de fondo */
+    height: 100vh; /* Ajusta la altura a la altura de la ventana */
+    /* Ajusta los márgenes */
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Para separar los elementos horizontalmente */
+    align-items: center; /* Para alinear verticalmente los elementos */
+    max-width: 800px; /* Ajusta según tu diseño */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.content {
+    flex: 1;
+}
+
+.parrafo {
+    text-align: justify;
+}
+
+.image {
+    flex-shrink: 0; /* Evita que la imagen se encoge para ajustarse */
+    margin-left: 20px; /* Espacio entre el contenido y la imagen */
+    max-width: 100%;
+    height: 100%; /* Opcional, ajusta la altura al 100% si deseas mantener la proporción */
+    object-fit: contain; /* Ajusta el contenido dentro del contenedor manteniendo su proporción */
+}
