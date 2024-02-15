@@ -11,7 +11,7 @@ export const mensaje = () => {
           lobby De día soy inge y de noche me gusta hacer stream de juegos
           variados como mi serie de llegando a diamante en halo wars, unas
           partidas del apextoso siempre ayudan, me gustan los juegos de
-          estrategia (RTS ), Gestión.
+          estrategia (RTS), Gestión.
         </p>
       </div>
       <div className={stylesAbout.image}>

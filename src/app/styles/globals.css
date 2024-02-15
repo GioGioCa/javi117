@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 /* base styles */
-main {
+/* main {
   @apply flex flex-col items-center justify-center
     bg-gray-100
     h-screen
     my-10 mx-auto
     max-w-5xl;
   border-radius: 30px;
+} */
+.main-container {
+  @apply flex flex-col items-center justify-center;
+  background-color: #f0f0f0; /* Gris claro */
+  height: 100vh; /* Altura de la pantalla */
+  margin: 10px auto; /* Margen superior e inferior, centrado horizontalmente */
+  max-width: 960px; /* Ancho máximo */
+  border-radius: 30px; /* Bordes redondeados */
 }
 
 /* nav styles */
@@ -67,3 +75,68 @@ main nav {
   background-position: 50%;
   padding: 5rem 0;
 }
+
+/* Clips */
+.clips{
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em; /* Tamaño de fuente ajustable */
+  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
+  text-align: center;
+}
+
+.twitchClips {
+  color: #4B0082; /* Morado oscuro */
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em; /* Tamaño de fuente ajustable */
+  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
+  text-align: center;
+}
+
+.youtubeClips {
+  color: #FF0000; /* Rojo */
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em; /* Tamaño de fuente ajustable */
+  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
+  text-align: center;
+}
+
+.tiktokClips {
+  color: #000000; /* Negro */
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em; /* Tamaño de fuente ajustable */
+  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
+  text-align: center;
+}
+/* div {
+  display: flex; Este la caga y no se xk
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Añade espacio entre cada grupo de clips */
+/*} */
+
+div {
+  flex-wrap: wrap;
+  overflow: hidden;
+  background:red;
+  height: auto;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.clipContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.clipItem {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+
