@@ -30,6 +30,17 @@ export default function RootLayout({ children }) {
           rel="icon"
           href="/../../public/favicon.ico"
         />
+        <script>
+          {`
+            document.addEventListener("DOMContentLoaded", function() {
+                var iframes = document.querySelectorAll("iframe");
+
+                for (var i = 0; i < iframes.length; i++) {
+                    iframes[i].src += "&autoplay=false";
+                }
+            });
+          `}
+        </script>
       </Head>
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
