@@ -31,6 +31,10 @@
 
 .parrafo {
     text-align: justify;
+    font-size: 1.1rem; /* Tamaño mediano */
+    color: #666; /* Color de texto más oscuro */
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
 .image {
@@ -39,4 +43,14 @@
     max-width: 100%;
     height: 100%; /* Opcional, ajusta la altura al 100% si deseas mantener la proporción */
     object-fit: contain; /* Ajusta el contenido dentro del contenedor manteniendo su proporción */
+}
+
+.h1{
+    font-size: 2.5rem; /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alineación centrada */
+    text-transform: uppercase; /* Convertir texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 20px; /* Margen inferior */
 }

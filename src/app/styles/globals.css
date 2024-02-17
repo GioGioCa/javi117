@@ -10,16 +10,22 @@ main {
     my-10 mx-auto
     max-w-5xl;
   border-radius: 30px;
-  
+  display: flex;
+  flex-direction: column;
 }
 .main-container {
   @apply flex flex-col items-center justify-center;
   background-color: #f0f0f0; /* Gris claro */
-  height: 100vh; /* Altura de la pantalla */
+  height: 100%; /* Altura de la pantalla */
   margin: 10px auto; /* Margen superior e inferior, centrado horizontalmente */
   max-width: 960px; /* Ancho máximo */
   border-radius: 30px; /* Bordes redondeados */
-  
+  display: flex;
+  min-height: 100%; /* Asegura que el main ocupe al menos toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro del main se apilen verticalmente */
+  overflow: auto; /* o overflow: hidden; */
+
 }
 
 /* nav styles */
@@ -129,7 +135,7 @@ main nav {
   flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
   justify-content: center;
   align-items: center;
-  background-color: blue; /* Color de fondo de los contenedores de clips */
+   /* Color de fondo de los contenedores de clips */
   padding: 10px; /* Añade espacio entre los elementos */
   border-radius: 10px;
 }
@@ -140,8 +146,15 @@ main nav {
   flex: 1;
   flex-shrink: 0;
   margin: 5px; /* Añade espacio entre los elementos */
-  background-color: green; /* Color de fondo de los elementos de clip */
+   /* Color de fondo de los elementos de clip */
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  position: relative;
 }

@@ -7,39 +7,39 @@ export default function Home() {
   const userId = "javier0117";
   // Replace with the user ID of the user you want to get clips from
   return (
-    <main  className="main-container">
+    <main className="main-container">
       <div className="contenedorPrincipal">
-
-      <div><p>hola</p></div>
-        
         <div>
+          <p>hola</p>
+        </div>
+        <section
+          id="twitchArea"
+          class="section"
+        >
           <h1 className="twitchClips">Clips de Twitch de Javi - 117</h1>
-            <ClipsTwitch />
-        </div>
-          
-        
-        <div>
-            <h1 className="youtubeClips">Clips de Youtube de Javi - 117</h1>
-            <ClipsYoutube />
-        </div>
-        <div>
+          <ClipsTwitch />
+        </section>
+        <section
+          id="youtubeArea"
+          class="section"
+        >
+          <h1 className="youtubeClips">Clips de Youtube de Javi - 117</h1>
+          <ClipsYoutube />
+        </section>
+        <section
+          id="tiktokArea"
+          class="section"
+        >
           <h1 className="tiktokClips">Tiktoks de Javi - 117</h1>
           <ClipsTiktok />
-      </div>
-      </div>
-  </main>
-
+        </section>
+        </div>
+    </main>
   );
 }
 
-/* 
-<div>
 
-</div>
-<div>
-          <h1 className="tiktokClips">Tiktoks de Javi - 117</h1>
-          <ClipsTiktok />
-      </div>
-
-
-*/
+/* {<div className="contenedorPrincipal">
+        <div>
+          <p>hola</p>
+        </div> </div> }*/
