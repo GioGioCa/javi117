@@ -38,8 +38,3 @@ export default function Home() {
   );
 }
 
-
-/* {<div className="contenedorPrincipal">
-        <div>
-          <p>hola</p>
-        </div> </div> }*/
