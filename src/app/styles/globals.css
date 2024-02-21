@@ -13,7 +13,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.main-container {
+.mainxd-container {
   @apply flex flex-col items-center justify-center;
   background-color: #f0f0f0; /* Gris claro */
   height: 100%; /* Altura de la pantalla */
@@ -26,6 +26,24 @@ main {
   flex-direction: column; /* Asegura que los elementos dentro del main se apilen verticalmente */
   overflow: auto; /* o overflow: hidden; */
 
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 30px; /* Ajusta el borde redondeado */
+  max-width: 5xl; /* Ajusta el ancho máximo max-width: 64rem;*/
+  background-color: #f7f7f7; /* Cambia el color de fondo */
+  height: 100%; /* Ajusta la altura a la altura de la ventana */
+  overflow: auto; /* o overflow: hidden; */
+  /* Ajusta los márgenes */
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* nav styles */

@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import "./styles/globals.css";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 //Components
 import Navbar from "./components/Navbar";

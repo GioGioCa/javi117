@@ -40,7 +40,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <i className="fab fa-tiktok" /> TikTok
+                <><i className="fa-brands fa-tiktok" /> <span>Tiktok</span></>
                 </a>
             </li>
             </ul>

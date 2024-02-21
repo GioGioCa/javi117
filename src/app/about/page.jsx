@@ -1,18 +1,22 @@
+import React from 'react';
 import stylesAbout from '../styles/about.module.css';
 import Image from 'next/image';
+
+//Components
 
 export const mensaje = () => {
   return (
     <div className={stylesAbout.container}>
       <div className={stylesAbout.content}>
-        <h1>Hola soy Javier!!!</h1>
+        <h1 className={stylesAbout.titulo}>Hola soy Javier!!!</h1>
         <p className={stylesAbout.parrafo}>
-          Jugador profesional en Apex con una gran habilidad en caer e irme PAL
-          lobby De día soy inge y de noche me gusta hacer stream de juegos
-          variados como mi serie de llegando a diamante en halo wars, unas
-          partidas del apextoso siempre ayudan, me gustan los juegos de
-          estrategia (RTS), Gestión.
+          Jugador profesional en Apex con una gran habilidad en caer e irme pal
+          lobby de día soy inge y de noche me gusta hacer stream de juegos
+          variados, como mi serie de llegando a diamante en Halo Wars 2 y unas
+          partidas del APEXtoso siempre ayudan, me gustan los juegos de
+          estrategia (RTS), Gestión, entre muchos otros.
         </p>
+
       </div>
       <div className={stylesAbout.image}>
         <Image

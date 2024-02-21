@@ -1,0 +1,34 @@
+.redes {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tituloImagen {
+    display: flex;
+    align-items: center;
+}
+
+.tituloImagen h1 {
+    margin-right: 10px;
+}
+
+.ulist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ulist li {
+    margin-bottom: 10px;
+}
+
+.ulist li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.ulist li a:hover {
+    color: #007bff;
+}

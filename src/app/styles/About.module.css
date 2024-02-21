@@ -9,7 +9,7 @@
     border-radius: 30px; /* Ajusta el borde redondeado */
     max-width: 5xl; /* Ajusta el ancho máximo max-width: 64rem;*/
     background-color: #f7f7f7; /* Cambia el color de fondo */
-    height: 100vh; /* Ajusta la altura a la altura de la ventana */
+    height: 100%; /* Ajusta la altura a la altura de la ventana */
     /* Ajusta los márgenes */
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -18,15 +18,29 @@
 }
 
 .container {
+    /* Otros estilos según sea necesario, como posición, tamaño, etc. */
     display: flex;
     justify-content: space-between; /* Para separar los elementos horizontalmente */
     align-items: center; /* Para alinear verticalmente los elementos */
     max-width: 800px; /* Ajusta según tu diseño */
     margin: 0 auto; /* Centra el contenido */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .content {
     flex: 1;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .parrafo {
