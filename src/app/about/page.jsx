@@ -8,7 +8,7 @@ export const mensaje = () => {
   return (
     <div className={stylesAbout.container}>
       <div className={stylesAbout.content}>
-        <h1 className={stylesAbout.titulo}>Hola soy Javier!!!</h1>
+        <h1 className={stylesAbout.titulo}>Hola soy Javier117!!!</h1>
         <p className={stylesAbout.parrafo}>
           Jugador profesional en Apex con una gran habilidad en caer e irme pal
           lobby de día soy inge y de noche me gusta hacer stream de juegos

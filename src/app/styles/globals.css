@@ -103,39 +103,22 @@ main nav {
 }
 
 /* Clips */
-.clips{
-  padding: 20px;
-  margin: 10px;
-  font-size: 1.5em; /* Tamaño de fuente ajustable */
-  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
+.clips {
+  @apply p-4 my-2;
+  font-size: 2vw; /* Utiliza vw para ajustar el tamaño de la fuente */
   text-align: center;
 }
 
 .twitchClips {
   color: #4B0082; /* Morado oscuro */
-  padding: 20px;
-  margin: 10px;
-  font-size: 1.5em; /* Tamaño de fuente ajustable */
-  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
-  text-align: center;
 }
 
 .youtubeClips {
   color: #FF0000; /* Rojo */
-  padding: 20px;
-  margin: 10px;
-  font-size: 1.5em; /* Tamaño de fuente ajustable */
-  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
-  text-align: center;
 }
 
 .tiktokClips {
   color: #000000; /* Negro */
-  padding: 20px;
-  margin: 10px;
-  font-size: 1.5em; /* Tamaño de fuente ajustable */
-  font-family: Arial, sans-serif; /* Tipo de letra recomendado */
-  text-align: center;
 }
 
 .contenedorPrincipal {
@@ -147,27 +130,23 @@ main nav {
     align-items: center;
 }
 
-/* Estilos para los contenedores de clips */
+/* Estilos para el contenedor de clips */
 .clipContainer {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
-  justify-content: center;
-  align-items: center;
-   /* Color de fondo de los contenedores de clips */
-  padding: 10px; /* Añade espacio entre los elementos */
-  border-radius: 10px;
+  @apply flex flex-wrap justify-center items-center p-4;
+  border-radius: 3vw; /* Utiliza un valor relativo para el borde redondeado */
 }
 
 /* Estilos para los elementos de clip */
 .clipItem {
-  display: flex;
-  flex: 1;
-  flex-shrink: 0;
-  margin: 5px; /* Añade espacio entre los elementos */
-   /* Color de fondo de los elementos de clip */
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
+  @apply flex justify-center items-center m-2;
+  border-radius: 3vw; /* Utiliza un valor relativo para el borde redondeado */
+}
+
+/* Estilos por defecto para el iframe */
+.video-container {
+  /* Hace que el iframe ocupe todo el ancho del contenedor */
+  width: 560px; /* Ancho máximo para el iframe en pantallas normales */
+  height: 315px; /* Altura fija del iframe */
 }
 
 .section {
@@ -175,4 +154,30 @@ main nav {
   padding-bottom: 3rem;
   box-sizing: border-box;
   position: relative;
+}
+
+
+/* Media query para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  main {
+    @apply p-4; /* Ajusta el padding */
+  }
+  .clips {
+    @apply p-2;
+    font-size: 4vw; /* Ajusta el tamaño de la fuente */
+  }
+  nav {
+    @apply flex-row justify-between; /* Cambia la dirección de flexión y ajusta la justificación */
+  }
+  .clipContainer {
+    @apply p-2; /* Reducir el padding en dispositivos móviles */
+  }
+  .clipItem {
+    @apply m-1; /* Reducir el margen entre elementos en dispositivos móviles */
+  }
+  .video-container {
+    max-width: 80vw; /* Ancho máximo del iframe en dispositivos móviles */
+    height: auto; /* Altura automática del iframe para mantener la proporción */
+  }
+
 }
