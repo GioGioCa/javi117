@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   @apply flex flex-col items-center justify-center
     bg-gray-100
