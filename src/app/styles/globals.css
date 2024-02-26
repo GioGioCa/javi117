@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background: linear-gradient(135deg, #004d00, #4B0082);
+}
 
 main {
   @apply flex flex-col items-center justify-center
@@ -16,20 +19,6 @@ main {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-}
-.mainxd-container {
-  @apply flex flex-col items-center justify-center;
-  background-color: #f0f0f0; /* Gris claro */
-  height: 100%; /* Altura de la pantalla */
-  margin: 10px auto; /* Margen superior e inferior, centrado horizontalmente */
-  max-width: 960px; /* Ancho máximo */
-  border-radius: 30px; /* Bordes redondeados */
-  display: flex;
-  min-height: 100%; /* Asegura que el main ocupe al menos toda la altura de la pantalla */
-  display: flex;
-  flex-direction: column; /* Asegura que los elementos dentro del main se apilen verticalmente */
-  overflow: auto; /* o overflow: hidden; */
-
 }
 
 .main-container {
@@ -52,32 +41,17 @@ main {
 
 /* nav styles */
 nav {
-  @apply pb-4
-    border-b-2 border-gray-200
-    flex items-center justify-end gap-5
-    my-10 mx-auto
-    max-w-5xl;
+  @apply pb-4 border-b-2 border-gray-200 flex my-10 mx-auto max-w-5xl;
   text-transform: uppercase;
-  /* background-color: green; */
-}
-@media (min-width: 768px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
-nav-links {
-  @apply font-bold py-2 px-4 rounded-lg
-  pb-4
-  border-b-2 border-gray-200
-  flex flex-col justify-end items-end h-full
-  my-10 mx-auto
-  max-w-5xl;
+.nav-links {
+  @apply font-bold py-2 px-4;
 }
 
-nav-links a {
-  @apply text-gray-500 hover:text-black;
+.nav-links a {
+  @apply text-white hover:text-black;
+  text-decoration: none;
 }
 
 nav a,
@@ -85,15 +59,17 @@ nav span {
   @apply text-gray-500;
   transition: color 0.5s;
 }
+
 nav a:hover {
   @apply text-black;
 }
+
 main nav {
   @apply border-0;
 }
 
-/* header */
 
+/* header */
 .header {
   background-color: linear-gradient(
     to right,
@@ -106,11 +82,13 @@ main nav {
   padding: 5rem 0;
 }
 
+
 /* Clips */
 .clips {
   @apply p-4 my-2;
-  font-size: 2vw; /* Utiliza vw para ajustar el tamaño de la fuente */
+  font-size: 2vw;
   text-align: center;
+  font-weight: bold;
 }
 
 .twitchClips {
@@ -129,7 +107,6 @@ main nav {
     width:100%;
     min-height: 100vh;
     min-height: 100%;
-    border:1px solid red;
     justify-content: center;
     align-items: center;
 }
@@ -137,20 +114,19 @@ main nav {
 /* Estilos para el contenedor de clips */
 .clipContainer {
   @apply flex flex-wrap justify-center items-center p-4;
-  border-radius: 3vw; /* Utiliza un valor relativo para el borde redondeado */
+  border-radius: 3vw;
 }
 
 /* Estilos para los elementos de clip */
 .clipItem {
   @apply flex justify-center items-center m-2;
-  border-radius: 3vw; /* Utiliza un valor relativo para el borde redondeado */
+  border-radius: 3vw;
 }
 
 /* Estilos por defecto para el iframe */
 .video-container {
-  /* Hace que el iframe ocupe todo el ancho del contenedor */
-  width: 560px; /* Ancho máximo para el iframe en pantallas normales */
-  height: 315px; /* Altura fija del iframe */
+  width: 560px;
+  height: 315px;
 }
 
 .section {
@@ -160,28 +136,34 @@ main nav {
   position: relative;
 }
 
+.white-text {
+  color: white;
+}
 
-/* Media query para dispositivos con un ancho máximo de 768px */
+.white-text:hover {
+  color: blue;
+}
+
 @media (max-width: 768px) {
   main {
-    @apply p-4; /* Ajusta el padding */
+    @apply p-4;
   }
   .clips {
     @apply p-2;
-    font-size: 4vw; /* Ajusta el tamaño de la fuente */
+    font-size: 4vw;
   }
   nav {
-    @apply flex-row justify-between; /* Cambia la dirección de flexión y ajusta la justificación */
+    @apply flex-row justify-between;
   }
   .clipContainer {
-    @apply p-2; /* Reducir el padding en dispositivos móviles */
+    @apply p-2;
   }
   .clipItem {
-    @apply m-1; /* Reducir el margen entre elementos en dispositivos móviles */
+    @apply m-1;
   }
   .video-container {
-    max-width: 80vw; /* Ancho máximo del iframe en dispositivos móviles */
-    height: auto; /* Altura automática del iframe para mantener la proporción */
+    max-width: 80vw;
+    height: auto;
   }
 
 }

@@ -4,7 +4,7 @@ const Footer = () => {
     return (
     <footer className="container-md py-10 mt-5 relative before:absolute before:top-0 before:left-4 before:w-[calc(100%-16px)] before:h-[1px] before:bg-gray-100">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-5 relative">
-        <p className="font-light md:pr-5 md:pb-5 md:pl-5">
+        <p className="font-light md:pr-5 md:pb-5 md:pl-5 text-white">
             Copyright © 2024 Javier 117
         </p>
         <nav
@@ -18,7 +18,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <i className="fab fa-twitch text-3xl" />
+                <i className="fab fa-twitch text-3xl white-text"/>
                 </a>
             </li>
             <li className="mr-4">
@@ -27,7 +27,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <i className="fab fa-youtube text-3xl" />
+                <i className="fab fa-youtube text-3xl white-text"/>
                 </a>
             </li>
             <li className="mr-4">
@@ -36,7 +36,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <i className="fab fa-instagram text-3xl" />
+                <i className="fab fa-instagram text-3xl white-text"/>
                 </a>
             </li>
             <li className="mr-4">
@@ -45,7 +45,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <i className="fa-brands fa-tiktok text-3xl" />
+                <i className="fa-brands fa-tiktok text-3xl white-text"/>
                 </a>
             </li>
             </ul>

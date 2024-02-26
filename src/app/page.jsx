@@ -5,8 +5,6 @@ import Introduccion from "./components/Introduccion";
 // Add the 'use client' directive at the top of the file
 
 export default function Home() {
-  const userId = "javier0117";
-  // Replace with the user ID of the user you want to get clips from
   return (
     <main className="main-container">
       <div className="contenedorPrincipal">
